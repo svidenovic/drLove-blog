@@ -1,0 +1,537 @@
+
+@font-face {
+    font-family: datefont;
+    src: url("deps/fonts/AccidentalPresidency.ttf");
+}
+@font-face {
+    font-family: namefont;
+    src: url("deps/fonts/AccidentalPresidency.ttf");
+}
+@font-face {
+    font-family: textfont;
+    src: url("deps/fonts/AccidentalPresidency.ttf");
+}
+@font-face {
+    font-family: postItemfont;
+    src: url("deps/fonts/tahoma.ttf");
+}
+@font-face {
+    font-family: arrowsANDstatFont;
+    src: url("deps/fonts/tahoma.ttf");
+}
+@font-face {
+    font-family: RLDbtnsANDfailmsgsFont;
+    src: url("deps/fonts/tahoma.ttf");
+}
+
+body{ padding: 0; background-color: #113b65; }
+
+div.imgBGbdy{
+    position: relative;
+    display: block;
+    width: 950px;
+    height: 700px;
+    margin: 0 auto 100px auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("deps/dlBGimg.png");
+}
+
+div.dlMainDiv{
+    position: relative;
+    display: block;
+    float: left;
+    width: 820px;
+    height: 600px;
+    margin: 0 0 0 75px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+div.BtnsHolder{
+    position: relative;
+    display: block;
+    float: left;
+    width: 50px;
+    height: 160px;
+    margin: 220px 20px 220px 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("deps/btnBG.png");
+}
+
+button.topcsBtn{
+    position: relative;
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("deps/rotBtn.png");
+    color: #D3D3D3;
+    font-family: topicsfont;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    z-index: 2;
+}
+button:hover.topcsBtn{ background-image: url("deps/rotBtnhover.png"); }
+
+button.vinfoBtn{
+    position: relative;
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 5px 0 5px 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("deps/rotBtn.png");
+    color: #D3D3D3;
+    font-family: topicsfont;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    z-index: 2;
+}
+button:hover.vinfoBtn{ background-image: url("deps/rotBtnhover.png"); }
+
+button.bhelpBtn{
+    position: relative;
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("deps/rotBtn.png");
+    color: #D3D3D3;
+    font-family: topicsfont;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    z-index: 2;
+}
+button:hover.bhelpBtn{ background-image: url("deps/rotBtnhover.png"); }
+
+div.postMainDiv{
+    position: relative;
+    display: block;
+    float: left;
+    width: 750px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+span.failMsg{
+    position: relative;
+    display: block;
+    float: left;
+    width: 390px;
+    height: 32px;
+    margin: 283px 0 0 10px;
+    padding: 0 0 0 10px;
+    background-color: transparent;
+    background-image: url("deps/transwhitepix.png");
+    background-repeat: repeat;
+    border: none;
+    border-radius: 3px;
+    text-align: left;
+    font-family: RLDbtnsANDfailmsgsFont;
+    font-size: 24px;
+    color: white;
+    cursor: default;
+}
+
+button.errorRLDbtn{
+    position: relative;
+    display: block;
+    float: left;
+    width: 100px;
+    height: 33px;
+    margin: 282px 0 0 10px;
+    padding: 0;
+    border: none;
+    border-radius: 3px;
+    background-color: #114566;
+    text-align: center;
+    font-family: RLDbtnsANDfailmsgsFont;
+    font-size: 16px;
+    color: #C9ECFF;
+    cursor: default;
+    transition: text-shadow 0.25s, color 0.25s, background-color 0.25s;
+    -webkit-transition: text-shadow 0.25s, color 0.25s, background-color 0.25s;
+    -moz-transition: text-shadow 0.25s, color 0.25s, background-color 0.25s;
+    -o-transition: text-shadow 0.25s, color 0.25s, background-color 0.25s;
+}
+button:hover.errorRLDbtn{
+    color: #ffffff;
+    text-shadow: 0 0 8px #8CD6FF;
+}
+button:active.errorRLDbtn{
+    color: #ffffff;
+    text-shadow: 0 0 12px #ffffff;
+    background-color: #15567F;
+}
+
+span.dateSpan{
+    position: relative;
+    display: block;
+    float: left;
+    width: 690px;
+    height: auto;
+    margin: 50px 0 0 40px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    font-family: datefont;
+    font-size: 48px;
+    color: #ffffff;
+    cursor: default;
+}
+
+span.nameSpan{
+    position: relative;
+    display: block;
+    float: left;
+    width: 660px;
+    height: auto;
+    margin: 0 0 0 70px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    font-family: namefont;
+    font-size: 32px;
+    color: #D3D3D3;
+    cursor: default;
+}
+
+div.textDiv{
+    position: relative;
+    display: block;
+    float: left;
+    width: 710px;
+    height: auto;
+    margin: 50px 0 0 20px;
+    padding: 0 0 100px 0;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    font-family: textfont;
+    font-size: 32px;
+    color: #ffffff;
+    cursor: default;
+    overflow: none;
+}
+
+span.textSpan{
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: default;
+}
+img.txtPrompt{
+    position: relative;
+    display: block;
+    float: left;
+    width: 10px;
+    height: 28px;
+    margin: 4px 0 0 10px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: default;
+}
+
+div.listHolder{
+    position: relative;
+    display: block;
+    float: left;
+    width: 750px;
+    height: 440px;
+    margin: 80px 0 0 0;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    background-image: url("deps/transwhitepix.png");
+    background-repeat: repeat;
+}
+
+div.queryDivHld{
+    position: relative;
+    display: block;
+    float: left;
+    width: 650px;
+    height: 40px;
+    margin: 10px 0 0 0;
+    padding: 0 5px 0 5px;
+    border: none;
+    background-color: transparent;
+}
+
+div.queryDiv{
+    position: relative;
+    display: block;
+    float: left;
+    width: 130px;
+    height: 40px;
+    margin: 0 0 0 305px;
+    padding: 0 5px 0 5px;
+    border: none;
+    background-color: transparent;
+}
+
+div.listDiv{
+    position: relative;
+    display: block;
+    float: left;
+    width: 730px;
+    height: 360px;
+    margin: 0 0 0 10px;
+    padding: 20px 0 0 0;
+    border: none;
+    background-color: transparent;
+}
+
+button.listRLDbtn{
+    position: relative;
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+    background-color: transparent;
+    background-image: url("deps/rld.png");
+    cursor: default;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+button:hover.listRLDbtn{
+    -webkit-transform: rotate(360deg);
+    background-image: url("deps/rldclick.png");
+}
+button:active.listRLDbtn{}
+
+button.listXbtn{
+    position: relative;
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+    background-color: transparent;
+    background-image: url("deps/iks.png");
+    cursor: default;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+button:hover.listXbtn{ background-image: url("deps/iksclick.png"); }
+button:active.listXbtn{ background-image: url("deps/iksclick.png"); }
+
+button.LarwBtn{
+    position: relative;
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px 0 0 0;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+    background-color: transparent;
+    background-image: url("deps/arwl.png");
+    cursor: default;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+}
+button:hover.LarwBtn{ background-image: url("deps/arwlhover.png"); }
+button:active.LarwBtn{  }
+
+button.RarwBtn{
+    position: relative;
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px 0 0 0;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+    background-color: transparent;
+    background-image: url("deps/arwr.png");
+    cursor: default;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+}
+button:hover.RarwBtn{ background-image: url("deps/arwrhover.png"); }
+button:active.RarwBtn{  }
+
+input.pagesta2s1{
+    position: relative;
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 4px 0 0 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: right;
+    font-family: arrowsANDstatFont;
+    font-size: 16px;
+    color: #C9ECFF;
+}
+input.spslash{
+    position: relative;
+    display: block;
+    float: left;
+    width: 10px;
+    height: 30px;
+    margin: 4px 0 0 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+    font-family: arrowsANDstatFont;
+    font-size: 16px;
+    color: #C9ECFF;
+}
+input.pagesta2s2{
+    position: relative;
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 4px 0 0 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: left;
+    font-family: arrowsANDstatFont;
+    font-size: 16px;
+    color: #C9ECFF;
+}
+
+button.postItem{
+    position: relative;
+    display: block;
+    float: left;
+    width: 690px;
+    height: 32px;
+    margin: 5px 0 0 20px;
+    padding: 0 10px 3px 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: postItemfont;
+    background-image: none;
+    background-repeat: repeat;
+    font-size: 22px;
+    text-align: left;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+}
+button:hover.postItem{ background-image: url("deps/transwhitepix.png"); }
+button:active.postItem{ text-shadow: 0 0 8px #ffffff; }
+
+span.failMsg2{
+    position: relative;
+    display: block;
+    float: left;
+    width: 730px;
+    height: auto;
+    margin: 10px 0 0 0;
+    padding: 3px 0 0 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    font-family: RLDbtnsANDfailmsgsFont;
+    font-size: 24px;
+    color: white;
+    cursor: default;
+}
+
+div.idivspace{
+    position: relative;
+    display: block;
+    float: left;
+    width: 640px;
+    height: 40px;
+    margin: 10px 0 0 50px;
+    padding: 0 5px 0 5px;
+    border: none;
+    background-color: transparent;
+}
+
+div.infoDiv{
+    position: relative;
+    display: block;
+    float: left;
+    width: 730px;
+    height: 360px;
+    margin: 0 0 0 10px;
+    padding: 20px 0 0 0;
+    border: none;
+    background-color: gray;
+}
+
+div.hdivspace{
+    position: relative;
+    display: block;
+    float: left;
+    width: 640px;
+    height: 40px;
+    margin: 10px 0 0 50px;
+    padding: 0 5px 0 5px;
+    border: none;
+    background-color: transparent;
+}
+
+div.helpDiv{
+    position: relative;
+    display: block;
+    float: left;
+    width: 730px;
+    height: 360px;
+    margin: 0 0 0 10px;
+    padding: 20px 0 0 0;
+    border: none;
+    background-color: black;
+}
